@@ -225,133 +225,134 @@
       }
       /*HASTA AQUI EL CSS DE MARC*/
       /*CSS DE ADRIAN*/
+      /*CSS DE ADRIAN*/
       
       @keyframes rotar {
-          0% {
-              transform: rotate( 0deg) scale( 1);
-          }
-          33% {
-              transform: rotate( 15deg) scale( 1);
-          }
-          66% {
-              transform: rotate( -15deg) scale( 1);
-          }
-          100% {
-              transform: rotate( 0deg) scale( 1);
-          }
-      }
-      
-      .index {
-          display: flex;
-          margin: 5rem;
-      }
-      
-      .h1-index {
-          padding: 2rem;
-      }
-      
-      .img-index {
-          width: 20rem;
-          clip-path: circle(50%);
-          display: block;
-          margin: auto;
-          transition-duration: 1s;
-      }
-      
-      .img-index:hover {
-          border: 1px solid #2e2e2d;
-          box-shadow: 0px 0px 50px #666;
-          animation: rotar 1s;
-      }
-      
-      .opcion-menu {
+        0% {
+            transform: rotate( 0deg) scale( 1);
+        }
+        33% {
+            transform: rotate( 15deg) scale( 1);
+        }
+        66% {
+            transform: rotate( -15deg) scale( 1);
+        }
+        100% {
+            transform: rotate( 0deg) scale( 1);
+        }
+    }
+    body{
+      z-index: 1;
+    }
+    
+    .index {
+        display: flex;
+        margin: 5rem;
+    }
+    
+    .h1-index {
+        padding: 2rem;
+    }
+    
+    .img-index {
+        width: 20rem;
+        clip-path: circle(50%);
+        display: block;
+        margin: auto;
+        transition-duration: 1s;
+    }
+    
+    .img-index:hover {
+        border: 1px solid #2e2e2d;
+        box-shadow: 0px 0px 50px #666;
+        animation: rotar 1s;
+    }
+    
+    .opcion-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        z-index: 1;
+    }
+    
+    .opcion-menu:hover {
+        cursor: pointer;
+    }
+    
+    .footer-index {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .h1-index {
+        text-align: center;
+        font-weight: bolder;
+        font-size: x-large;
+    }
+    
+    video {
+        min-width: 100%;
+        height: 40rem;
+        object-fit: fill;
+        position: absolute;
+    }
+    
+    .contenedor-video {
+        max-width: 100%;
+        max-height: 20%;
+        overflow: hidden;
+    }
+    
+    .img-header {
+        width: 100%;
+    }
+    
+    .contenedor-oferta {
+        max-width: 100%;
+        max-height: 20%;
+        overflow: hidden;
+    }
+    
+    .oferta {
+        width: 100%;
+    }
+
+    
+    @media screen and (max-width: 500px) {
+        video {
+            display: none;
+        }
+        .index {
+            padding: 50px;
+            flex-direction: column;
+        }
+        .img-index {
+            width: 10rem;
+            margin: auto;
+            clip-path: circle(50%);
+            margin: 0;
+        }
+        .opcion-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-header {
+            padding-top: 3.5rem;
+        }
+        .enlace-index{
           display: flex;
           flex-direction: column;
-          justify-content: center;
           align-items: center;
-          padding: 2rem;
-      }
-      
-      .opcion-menu:hover {
-          cursor: pointer;
-      }
-      
-      .footer-index {
-          position: relative;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          text-align: center;
-      }
-      
-      .h1-index {
-          text-align: center;
-          font-weight: bolder;
-          font-size: x-large;
-      }
-      
-      video {
-          min-width: 100%;
-          height: 40rem;
-          object-fit: fill;
-          position: absolute;
-          z-index: -999;
-      }
-      
-      .contenedor-video {
-          max-width: 100%;
-          max-height: 20%;
-          overflow: hidden;
-      }
-      
-      .img-header {
-          width: 100%;
-      }
-      
-      .contenedor-oferta {
-          max-width: 100%;
-          max-height: 20%;
-          overflow: hidden;
-      }
-      
-      .oferta {
-          width: 100%;
-      }
-      
-      @media screen and (max-width: 500px) {
-          video {
-              min-width: 100%;
-              height: 75rem;
-              object-fit: fill;
-              position: absolute;
-              left: -40rem;
-              z-index: -999;
-          }
-          .contenedor-video {
-              max-width: 100%;
-              max-height: 20%;
-              overflow: hidden;
-          }
-          .index {
-              padding: 50px;
-              flex-direction: column;
-          }
-          .img-index {
-              width: 10rem;
-              margin: auto;
-              clip-path: circle(50%);
-              margin: 0;
-          }
-          .opcion-menu {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-          }
-          .img-header {
-              padding-top: 3.5rem;
-          }
-      }
+        }
+    }
+    /*HASTA AQUI CSS DE ADRIAN*/
       /*HASTA AQUI CSS DE ADRIAN*/
       /*CSS DE PAU*/
       
@@ -546,15 +547,9 @@
               margin-bottom: 20px;
               padding-top: 15px;
           }
-          /*.banderas {
-          height: auto;
-          width: 25px;
-          border-left: 1000px;
+
       }
-      */
-      }
-      /*HASTA AQUI CSS DE PAU*/
-      /*CSS DE IAN*/
+
       
       .grid-container {
           display: grid;
