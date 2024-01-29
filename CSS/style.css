@@ -1,13 +1,13 @@
       body {
           font-family: Arial, Helvetica, sans-serif;
-          background-image: url(https://img.freepik.com/foto-gratis/textura-madera_1194-5742.jpg);
+          background-image: url(https://img.freepik.com/foto-gratis/textura-madera_1194-5742.jpg); /*Imagen de fondo para toda la web*/
           background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;
           color: #fff;
       }
       
-      nav {
+      nav { /*Barra superior que actua como menú*/
           background-color: rgb(80, 18, 18);
           display: flex;
           height: 60px;
@@ -16,6 +16,11 @@
           width: 100%;
           z-index: 2;
       }
+      .banderas { /*Menu de idiomas*/
+        height: auto;
+        width: 25px;
+        padding-top: 10px;
+    }
       
       nav#horizontal ul {
           height: 3.5rem;
@@ -32,7 +37,7 @@
           width: 100%;
       }
       
-      .logo {
+      .logo { /*Configuracion del logo*/
           width: 50px;
           height: 50px;
           margin-left: 15px;
@@ -40,33 +45,21 @@
           text-align: left;
       }
       
-      div {
+      div { 
           flex-grow: 3;
       }
       
-      .menu {
+      .menu { /*Concretamente la parte del menu del nav a la derecha*/
+          display: flex;
           text-align: right;
-          margin-right: 20px;
+          margin-left: 1100px;
           margin-top: -74px;
+          justify-content: space-evenly;
+          ;
       }
       
-      #home {
-          margin-right: 20px;
-      }
-      
-      #nosotros {
-          margin-right: 20px;
-      }
-      
-      #carta {
-          margin-right: 20px;
-      }
-      
-      #contacto {
-          margin-right: 0px;
-      }
-      
-      .container {
+
+      .container { /*Creacion de los contaniers de la pagina de carta, donde se ponen las imagenes*/
           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
           grid-template-columns: repeat(6, 1fr);
           gap: 10px;
@@ -75,7 +68,7 @@
           display: grid;
       }
       
-      .column2 {
+      .column2 { /*Columna de Bebidas*/
           background-color: #e19494c6;
           color: #fff;
           width: 130%;
@@ -85,7 +78,7 @@
           margin-left: 30%;
       }
       
-      .column4 {
+      .column4 { /*Columna de Comida*/
           background-color: #e19494c6;
           color: black;
           width: 130%;
@@ -97,7 +90,7 @@
           margin-left: 70%;
       }
       
-      .column8 {
+      .column8 { /*Columna de Postres*/
           background-color: #e19494c6;
           color: #fff;
           width: 130%;
@@ -109,7 +102,7 @@
           margin-left: 0%;
       }
       
-      .column6 {
+      .column6 { /*Columna de acompañantes*/
           background-color: #e19494c6;
           color: #fff;
           width: 130%;
@@ -133,7 +126,7 @@
               margin-left: 5px;
               width: 100%;
           }
-          .column4 {
+          .column4 { /*Reposicionamiento de todo el layout*/
               margin-left: 5px;
               width: 100%;
           }
@@ -147,11 +140,13 @@
           }
           .menu {
               margin-top: -80px;
+              margin-left: 100px;
           }
-          .bandera {
+          .bandera { /*Reposicionamiento del menu de idiomas en telefono*/
               margin-left: 5px;
               margin-top: 5px
           }
+          
       }
       
       .titulos {
@@ -161,61 +156,50 @@
           font-size: 20px;
       }
       
-      footer {
+      footer { /*Centrado del Copyright*/
           text-align: center;
       }
       
-      .first {
+      .first { /*Centrado especial de los elementos colocados en la parte superior del gird*/
           margin-top: 20px;
           color: black;
           font-size: 18px;
           cursor: pointer;
       }
       
-      .second {
+      .second {  /*Centrado ordinario de los elementos colocados en la parte inferior del gird*/
           margin-top: 40px;
           color: black;
           font-size: 18px;
           cursor: pointer;
       }
       
-      .second:active {
+      .second:active { /*Saturado con active para los elementos del grid cuando se presione sobre la imagen, tambien llama a una animacion creada mas adelante*/
           opacity: 0.8;
           filter: saturate(1);
           filter: brightness(1.2);
           animation: agrandar 0.3s;
       }
       
-      .first:active {
+      .first:active { /*Saturado con active para los elementos del grid cuando se presione sobre la imagen, tambien llama a una animacion creada mas adelante*/
           opacity: 0.8;
           filter: saturate(1);
           filter: brightness(1.2);
           animation: agrandar 0.3s;
       }
       
-      .first:hover {
+      .first:hover { /*Brillo a la imagen y crecimiento en cuanto se pasa el raton por encima*/
           filter: brightness(1.2);
           scale: 1.1;
       }
       
-      .second:hover {
+      .second:hover { /*Brillo a la imagen y crecimiento en cuanto se pasa el raton por encima*/
           filter: brightness(1.3);
           scale: 1.1;
       }
+
       
-      .Search {
-          display: flex;
-          margin-left: 100px;
-          margin-top: -18px;
-          text-align: left;
-          box-sizing: border-box;
-          font-weight: bold;
-          display: flex;
-          justify-self: center;
-          align-items: center;
-      }
-      
-      @keyframes agrandar {
+      @keyframes agrandar { /*Animacion sencilla de crecimiento de imagen*/
           30% {
               transform: scale(0.90);
           }
@@ -448,12 +432,6 @@
           padding-left: 10px;
           margin-bottom: 20px;
           padding-top: 15px;
-      }
-      
-      .banderas {
-          height: auto;
-          width: 25px;
-          padding-top: 10px;
       }
       
       .espacio {
